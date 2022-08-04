@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol TransactionUseCase {
+    func transactions(_ request: String?) -> [Transaction]
+    func update(_ transaction: Transaction)
+    func add(_ transaction: Transaction)
+    func delete(_ transaction: Transaction)
+}

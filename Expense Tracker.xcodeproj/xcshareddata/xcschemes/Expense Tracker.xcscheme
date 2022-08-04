@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "65E4BCEB289A5B59001236F5"
-               BuildableName = "ExpenseTracker.app"
+               BuildableName = "Expense Tracker.app"
                BlueprintName = "Expense Tracker"
                ReferencedContainer = "container:Expense Tracker.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65E4BCEB289A5B59001236F5"
-            BuildableName = "ExpenseTracker.app"
+            BuildableName = "Expense Tracker.app"
             BlueprintName = "Expense Tracker"
             ReferencedContainer = "container:Expense Tracker.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65E4BCEB289A5B59001236F5"
-            BuildableName = "ExpenseTracker.app"
+            BuildableName = "Expense Tracker.app"
             BlueprintName = "Expense Tracker"
             ReferencedContainer = "container:Expense Tracker.xcodeproj">
          </BuildableReference>
