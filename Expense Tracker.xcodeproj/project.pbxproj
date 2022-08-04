@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		658FA6F5289BA6F30065742C /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F4289BA6F30065742C /* UseCaseProvider.swift */; };
+		658FA6F8289BBFC00065742C /* ReplayBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F7289BBFC00065742C /* ReplayBinding.swift */; };
+		658FA6FA289BBFD40065742C /* PublishBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F9289BBFD40065742C /* PublishBinding.swift */; };
 		65D37285289AB565004BE0D7 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37284289AB565004BE0D7 /* TransactionRepository.swift */; };
 		65D37287289AB579004BE0D7 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37286289AB579004BE0D7 /* String+ext.swift */; };
 		65D37289289AB57D004BE0D7 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37288289AB57D004BE0D7 /* Date+ext.swift */; };
 		65D3728B289AB5A6004BE0D7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3728A289AB5A6004BE0D7 /* Reusable.swift */; };
-		65D3728E289AB675004BE0D7 /* RealmManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3728D289AB675004BE0D7 /* RealmManage.swift */; };
+		65D3728E289AB675004BE0D7 /* RealmDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3728D289AB675004BE0D7 /* RealmDBRepository.swift */; };
+		65D372AF289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D372AE289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift */; };
+		65D372B1289AC076004BE0D7 /* Realm+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D372B0289AC076004BE0D7 /* Realm+ext.swift */; };
 		65D658ED289AB04C0010F75F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658EC289AB04C0010F75F /* HomeViewModel.swift */; };
 		65D658F1289AB0950010F75F /* AddTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F0289AB0950010F75F /* AddTransactionController.swift */; };
 		65D658F3289AB09C0010F75F /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F2289AB09C0010F75F /* AddTransactionViewModel.swift */; };
@@ -23,18 +28,24 @@
 		65E4BCF7289A5B59001236F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCF5289A5B59001236F5 /* Main.storyboard */; };
 		65E4BCF9289A5B5B001236F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCF8289A5B5B001236F5 /* Assets.xcassets */; };
 		65E4BCFC289A5B5B001236F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCFA289A5B5B001236F5 /* LaunchScreen.storyboard */; };
+		65E79C2F289BA405009F5749 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E79C2E289BA405009F5749 /* RealmDB.swift */; };
 		DC667C4B3E9EF975147F6C24 /* Pods_Expense_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED7055220D15AC9F5A601AB /* Pods_Expense_Tracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13B1B6781E4FEB09F2715FF1 /* Pods-Expense Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expense Tracker.release.xcconfig"; path = "Target Support Files/Pods-Expense Tracker/Pods-Expense Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		592D94622E6838C626680252 /* Pods-Expense Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Expense Tracker.debug.xcconfig"; path = "Target Support Files/Pods-Expense Tracker/Pods-Expense Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		658FA6F4289BA6F30065742C /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		658FA6F7289BBFC00065742C /* ReplayBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayBinding.swift; sourceTree = "<group>"; };
+		658FA6F9289BBFD40065742C /* PublishBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishBinding.swift; sourceTree = "<group>"; };
 		65D37284289AB565004BE0D7 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		65D37286289AB579004BE0D7 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
 		65D37288289AB57D004BE0D7 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 		65D3728A289AB5A6004BE0D7 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
-		65D3728D289AB675004BE0D7 /* RealmManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManage.swift; sourceTree = "<group>"; };
+		65D3728D289AB675004BE0D7 /* RealmDBRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBRepository.swift; sourceTree = "<group>"; };
 		65D372AA289AB6B6004BE0D7 /* Expense Tracker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Expense Tracker copy-Info.plist"; path = "/Users/lucio/Desktop/ExpenseTracker/Expense Tracker copy-Info.plist"; sourceTree = "<absolute>"; };
+		65D372AE289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDDatabaseUseCase.swift; sourceTree = "<group>"; };
+		65D372B0289AC076004BE0D7 /* Realm+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+ext.swift"; sourceTree = "<group>"; };
 		65D658EC289AB04C0010F75F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		65D658F0289AB0950010F75F /* AddTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionController.swift; sourceTree = "<group>"; };
 		65D658F2289AB09C0010F75F /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
@@ -48,6 +59,7 @@
 		65E4BCF8289A5B5B001236F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E4BCFB289A5B5B001236F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E4BCFD289A5B5B001236F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E79C2E289BA405009F5749 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		AED7055220D15AC9F5A601AB /* Pods_Expense_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expense_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,12 +92,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		65D3728C289AB653004BE0D7 /* RealmPlatform */ = {
+		658FA6F6289BBFB30065742C /* Biniding */ = {
 			isa = PBXGroup;
 			children = (
-				65D3728D289AB675004BE0D7 /* RealmManage.swift */,
+				658FA6F7289BBFC00065742C /* ReplayBinding.swift */,
+				658FA6F9289BBFD40065742C /* PublishBinding.swift */,
 			);
-			path = RealmPlatform;
+			path = Biniding;
+			sourceTree = "<group>";
+		};
+		65D3728C289AB653004BE0D7 /* LocalDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				65D372AD289ABC92004BE0D7 /* Repositories */,
+				65D372AC289ABC8B004BE0D7 /* UseCases */,
+			);
+			path = LocalDatabase;
+			sourceTree = "<group>";
+		};
+		65D372AC289ABC8B004BE0D7 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				65D372AE289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		65D372AD289ABC92004BE0D7 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				65E79C2D289BA3C1009F5749 /* RealmDB */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		65D658E1289AAE240010F75F /* Presentations */ = {
@@ -119,9 +157,11 @@
 		65D658E4289AAEC40010F75F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				658FA6F6289BBFB30065742C /* Biniding */,
 				65D37286289AB579004BE0D7 /* String+ext.swift */,
 				65D37288289AB57D004BE0D7 /* Date+ext.swift */,
 				65D3728A289AB5A6004BE0D7 /* Reusable.swift */,
+				65D372B0289AC076004BE0D7 /* Realm+ext.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -163,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				65D658F8289AB2D60010F75F /* TransactionUseCase.swift */,
+				658FA6F4289BA6F30065742C /* UseCaseProvider.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -224,8 +265,8 @@
 		65E4BCEE289A5B59001236F5 /* Expense Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				65D3728C289AB653004BE0D7 /* RealmPlatform */,
 				65D658E2289AAE6D0010F75F /* Application */,
+				65D3728C289AB653004BE0D7 /* LocalDatabase */,
 				65D658E7289AAF440010F75F /* Domain */,
 				65D658E5289AAF330010F75F /* Data */,
 				65D658E4289AAEC40010F75F /* Utility */,
@@ -234,6 +275,15 @@
 				65E4BCFD289A5B5B001236F5 /* Info.plist */,
 			);
 			path = "Expense Tracker";
+			sourceTree = "<group>";
+		};
+		65E79C2D289BA3C1009F5749 /* RealmDB */ = {
+			isa = PBXGroup;
+			children = (
+				65E79C2E289BA405009F5749 /* RealmDB.swift */,
+				65D3728D289AB675004BE0D7 /* RealmDBRepository.swift */,
+			);
+			path = RealmDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,17 +403,23 @@
 			files = (
 				65D3728B289AB5A6004BE0D7 /* Reusable.swift in Sources */,
 				65D37287289AB579004BE0D7 /* String+ext.swift in Sources */,
+				658FA6FA289BBFD40065742C /* PublishBinding.swift in Sources */,
 				65D658F7289AB2C10010F75F /* Transaction.swift in Sources */,
 				65D658F1289AB0950010F75F /* AddTransactionController.swift in Sources */,
+				658FA6F5289BA6F30065742C /* UseCaseProvider.swift in Sources */,
+				65D372B1289AC076004BE0D7 /* Realm+ext.swift in Sources */,
 				65D658F9289AB2D60010F75F /* TransactionUseCase.swift in Sources */,
 				65E4BCF4289A5B59001236F5 /* HomeViewController.swift in Sources */,
 				65D658ED289AB04C0010F75F /* HomeViewModel.swift in Sources */,
 				65D37285289AB565004BE0D7 /* TransactionRepository.swift in Sources */,
+				65D372AF289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift in Sources */,
 				65D37289289AB57D004BE0D7 /* Date+ext.swift in Sources */,
-				65D3728E289AB675004BE0D7 /* RealmManage.swift in Sources */,
+				658FA6F8289BBFC00065742C /* ReplayBinding.swift in Sources */,
+				65D3728E289AB675004BE0D7 /* RealmDBRepository.swift in Sources */,
 				65D658F3289AB09C0010F75F /* AddTransactionViewModel.swift in Sources */,
 				65D658F5289AB0BC0010F75F /* HomeNavigator.swift in Sources */,
 				65E4BCF0289A5B59001236F5 /* AppDelegate.swift in Sources */,
+				65E79C2F289BA405009F5749 /* RealmDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
