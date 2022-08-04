@@ -10,6 +10,11 @@
 		658FA6F5289BA6F30065742C /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F4289BA6F30065742C /* UseCaseProvider.swift */; };
 		658FA6F8289BBFC00065742C /* ReplayBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F7289BBFC00065742C /* ReplayBinding.swift */; };
 		658FA6FA289BBFD40065742C /* PublishBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6F9289BBFD40065742C /* PublishBinding.swift */; };
+		658FA705289BCC4F0065742C /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA6FD289BCC4F0065742C /* HomeNavigator.swift */; };
+		658FA706289BCC4F0065742C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA700289BCC4F0065742C /* HomeViewModel.swift */; };
+		658FA707289BCC4F0065742C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA701289BCC4F0065742C /* HomeViewController.swift */; };
+		658FA708289BCC4F0065742C /* AddTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA703289BCC4F0065742C /* AddTransactionController.swift */; };
+		658FA709289BCC4F0065742C /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658FA704289BCC4F0065742C /* AddTransactionViewModel.swift */; };
 		65D37285289AB565004BE0D7 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37284289AB565004BE0D7 /* TransactionRepository.swift */; };
 		65D37287289AB579004BE0D7 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37286289AB579004BE0D7 /* String+ext.swift */; };
 		65D37289289AB57D004BE0D7 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37288289AB57D004BE0D7 /* Date+ext.swift */; };
@@ -17,14 +22,9 @@
 		65D3728E289AB675004BE0D7 /* RealmDBRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D3728D289AB675004BE0D7 /* RealmDBRepository.swift */; };
 		65D372AF289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D372AE289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift */; };
 		65D372B1289AC076004BE0D7 /* Realm+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D372B0289AC076004BE0D7 /* Realm+ext.swift */; };
-		65D658ED289AB04C0010F75F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658EC289AB04C0010F75F /* HomeViewModel.swift */; };
-		65D658F1289AB0950010F75F /* AddTransactionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F0289AB0950010F75F /* AddTransactionController.swift */; };
-		65D658F3289AB09C0010F75F /* AddTransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F2289AB09C0010F75F /* AddTransactionViewModel.swift */; };
-		65D658F5289AB0BC0010F75F /* HomeNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F4289AB0BC0010F75F /* HomeNavigator.swift */; };
 		65D658F7289AB2C10010F75F /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F6289AB2C10010F75F /* Transaction.swift */; };
 		65D658F9289AB2D60010F75F /* TransactionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D658F8289AB2D60010F75F /* TransactionUseCase.swift */; };
 		65E4BCF0289A5B59001236F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4BCEF289A5B59001236F5 /* AppDelegate.swift */; };
-		65E4BCF4289A5B59001236F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E4BCF3289A5B59001236F5 /* HomeViewController.swift */; };
 		65E4BCF7289A5B59001236F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCF5289A5B59001236F5 /* Main.storyboard */; };
 		65E4BCF9289A5B5B001236F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCF8289A5B5B001236F5 /* Assets.xcassets */; };
 		65E4BCFC289A5B5B001236F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E4BCFA289A5B5B001236F5 /* LaunchScreen.storyboard */; };
@@ -38,6 +38,11 @@
 		658FA6F4289BA6F30065742C /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		658FA6F7289BBFC00065742C /* ReplayBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayBinding.swift; sourceTree = "<group>"; };
 		658FA6F9289BBFD40065742C /* PublishBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishBinding.swift; sourceTree = "<group>"; };
+		658FA6FD289BCC4F0065742C /* HomeNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
+		658FA700289BCC4F0065742C /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		658FA701289BCC4F0065742C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		658FA703289BCC4F0065742C /* AddTransactionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionController.swift; sourceTree = "<group>"; };
+		658FA704289BCC4F0065742C /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
 		65D37284289AB565004BE0D7 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		65D37286289AB579004BE0D7 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
 		65D37288289AB57D004BE0D7 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
@@ -46,15 +51,10 @@
 		65D372AA289AB6B6004BE0D7 /* Expense Tracker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Expense Tracker copy-Info.plist"; path = "/Users/lucio/Desktop/ExpenseTracker/Expense Tracker copy-Info.plist"; sourceTree = "<absolute>"; };
 		65D372AE289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDDatabaseUseCase.swift; sourceTree = "<group>"; };
 		65D372B0289AC076004BE0D7 /* Realm+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+ext.swift"; sourceTree = "<group>"; };
-		65D658EC289AB04C0010F75F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		65D658F0289AB0950010F75F /* AddTransactionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionController.swift; sourceTree = "<group>"; };
-		65D658F2289AB09C0010F75F /* AddTransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewModel.swift; sourceTree = "<group>"; };
-		65D658F4289AB0BC0010F75F /* HomeNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigator.swift; sourceTree = "<group>"; };
 		65D658F6289AB2C10010F75F /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		65D658F8289AB2D60010F75F /* TransactionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionUseCase.swift; sourceTree = "<group>"; };
 		65E4BCEC289A5B59001236F5 /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E4BCEF289A5B59001236F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65E4BCF3289A5B59001236F5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		65E4BCF6289A5B59001236F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E4BCF8289A5B5B001236F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E4BCFB289A5B5B001236F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +101,50 @@
 			path = Biniding;
 			sourceTree = "<group>";
 		};
+		658FA6FB289BCC4F0065742C /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				658FA6FC289BCC4F0065742C /* Navigators */,
+				658FA6FE289BCC4F0065742C /* Modules */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		658FA6FC289BCC4F0065742C /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				658FA6FD289BCC4F0065742C /* HomeNavigator.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
+		658FA6FE289BCC4F0065742C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				658FA6FF289BCC4F0065742C /* Home */,
+				658FA702289BCC4F0065742C /* AddTransaction */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		658FA6FF289BCC4F0065742C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				658FA700289BCC4F0065742C /* HomeViewModel.swift */,
+				658FA701289BCC4F0065742C /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		658FA702289BCC4F0065742C /* AddTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				658FA703289BCC4F0065742C /* AddTransactionController.swift */,
+				658FA704289BCC4F0065742C /* AddTransactionViewModel.swift */,
+			);
+			path = AddTransaction;
+			sourceTree = "<group>";
+		};
 		65D3728C289AB653004BE0D7 /* LocalDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,16 +168,6 @@
 				65E79C2D289BA3C1009F5749 /* RealmDB */,
 			);
 			path = Repositories;
-			sourceTree = "<group>";
-		};
-		65D658E1289AAE240010F75F /* Presentations */ = {
-			isa = PBXGroup;
-			children = (
-				65D658EA289AB0230010F75F /* Navigators */,
-				65D658EB289AB02A0010F75F /* Modules */,
-			);
-			name = Presentations;
-			path = "Scené";
 			sourceTree = "<group>";
 		};
 		65D658E2289AAE6D0010F75F /* Application */ = {
@@ -208,41 +242,6 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		65D658EA289AB0230010F75F /* Navigators */ = {
-			isa = PBXGroup;
-			children = (
-				65D658F4289AB0BC0010F75F /* HomeNavigator.swift */,
-			);
-			path = Navigators;
-			sourceTree = "<group>";
-		};
-		65D658EB289AB02A0010F75F /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				65D658EF289AB0790010F75F /* AddTransaction */,
-				65D658EE289AB0720010F75F /* Home */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		65D658EE289AB0720010F75F /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				65E4BCF3289A5B59001236F5 /* HomeViewController.swift */,
-				65D658EC289AB04C0010F75F /* HomeViewModel.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		65D658EF289AB0790010F75F /* AddTransaction */ = {
-			isa = PBXGroup;
-			children = (
-				65D658F0289AB0950010F75F /* AddTransactionController.swift */,
-				65D658F2289AB09C0010F75F /* AddTransactionViewModel.swift */,
-			);
-			path = AddTransaction;
-			sourceTree = "<group>";
-		};
 		65E4BCE3289A5B59001236F5 = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +270,7 @@
 				65D658E5289AAF330010F75F /* Data */,
 				65D658E4289AAEC40010F75F /* Utility */,
 				65D658E3289AAE720010F75F /* Resources */,
-				65D658E1289AAE240010F75F /* Presentations */,
+				658FA6FB289BCC4F0065742C /* Presentations */,
 				65E4BCFD289A5B5B001236F5 /* Info.plist */,
 			);
 			path = "Expense Tracker";
@@ -402,22 +401,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D3728B289AB5A6004BE0D7 /* Reusable.swift in Sources */,
+				658FA705289BCC4F0065742C /* HomeNavigator.swift in Sources */,
 				65D37287289AB579004BE0D7 /* String+ext.swift in Sources */,
+				658FA707289BCC4F0065742C /* HomeViewController.swift in Sources */,
+				658FA709289BCC4F0065742C /* AddTransactionViewModel.swift in Sources */,
+				658FA706289BCC4F0065742C /* HomeViewModel.swift in Sources */,
 				658FA6FA289BBFD40065742C /* PublishBinding.swift in Sources */,
 				65D658F7289AB2C10010F75F /* Transaction.swift in Sources */,
-				65D658F1289AB0950010F75F /* AddTransactionController.swift in Sources */,
 				658FA6F5289BA6F30065742C /* UseCaseProvider.swift in Sources */,
 				65D372B1289AC076004BE0D7 /* Realm+ext.swift in Sources */,
 				65D658F9289AB2D60010F75F /* TransactionUseCase.swift in Sources */,
-				65E4BCF4289A5B59001236F5 /* HomeViewController.swift in Sources */,
-				65D658ED289AB04C0010F75F /* HomeViewModel.swift in Sources */,
 				65D37285289AB565004BE0D7 /* TransactionRepository.swift in Sources */,
 				65D372AF289ABCBD004BE0D7 /* CRUDDatabaseUseCase.swift in Sources */,
 				65D37289289AB57D004BE0D7 /* Date+ext.swift in Sources */,
 				658FA6F8289BBFC00065742C /* ReplayBinding.swift in Sources */,
+				658FA708289BCC4F0065742C /* AddTransactionController.swift in Sources */,
 				65D3728E289AB675004BE0D7 /* RealmDBRepository.swift in Sources */,
-				65D658F3289AB09C0010F75F /* AddTransactionViewModel.swift in Sources */,
-				65D658F5289AB0BC0010F75F /* HomeNavigator.swift in Sources */,
 				65E4BCF0289A5B59001236F5 /* AppDelegate.swift in Sources */,
 				65E79C2F289BA405009F5749 /* RealmDB.swift in Sources */,
 			);
