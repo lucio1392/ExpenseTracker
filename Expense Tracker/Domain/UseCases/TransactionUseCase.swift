@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol TransactionUseCase {
-    func transactions(_ request: String?) -> [Transaction]
-    func update(_ transaction: Transaction)
-    func add(_ transaction: Transaction)
-    func delete(_ transaction: Transaction)
+    func transactions(_ request: String?) -> Single<[Transaction]>
+    func update(_ transaction: Transaction) -> Completable
+    func add(_ transaction: Transaction) -> Completable
+    func delete(_ transaction: Transaction) -> Completable
 }

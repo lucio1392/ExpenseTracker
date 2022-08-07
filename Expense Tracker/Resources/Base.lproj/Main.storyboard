@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -12,22 +12,113 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300.80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vt-yM-exC">
+                                <rect key="frame" x="12" y="74" width="351" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total spent this week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-fV-w7a">
+                                <rect key="frame" x="12" y="119" width="351" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EiN-Um-ckT" customClass="HomeChart" customModule="Expense_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="12" y="153" width="351" height="232"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-zK-1x2">
+                                <rect key="frame" x="8" y="401" width="359" height="411"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-8q-Tbv">
+                                <rect key="frame" x="305" y="60" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="51q-N7-S2e"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZOG-KJ-UCu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Add"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EiN-Um-ckT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="2bR-mX-2Nj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I0z-fV-w7a" secondAttribute="trailing" constant="12" id="38E-nL-TwF"/>
+                            <constraint firstItem="3Vt-yM-exC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="7Tb-3g-zq5"/>
+                            <constraint firstItem="I0z-fV-w7a" firstAttribute="top" secondItem="3Vt-yM-exC" secondAttribute="bottom" constant="2" id="ACg-RS-wza"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EiN-Um-ckT" secondAttribute="trailing" constant="12" id="DFm-kE-JMW"/>
+                            <constraint firstItem="Toc-zK-1x2" firstAttribute="top" secondItem="EiN-Um-ckT" secondAttribute="bottom" constant="16" id="Gc1-ep-Wbt"/>
+                            <constraint firstAttribute="trailing" secondItem="RIS-8q-Tbv" secondAttribute="trailing" constant="20" id="HVH-EK-JME"/>
+                            <constraint firstItem="RIS-8q-Tbv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Nbl-yb-3BV"/>
+                            <constraint firstItem="EiN-Um-ckT" firstAttribute="top" secondItem="I0z-fV-w7a" secondAttribute="bottom" constant="16" id="YB0-jS-FSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Vt-yM-exC" secondAttribute="trailing" constant="12" id="cKe-eD-Xkf"/>
+                            <constraint firstItem="I0z-fV-w7a" firstAttribute="leading" secondItem="3Vt-yM-exC" secondAttribute="leading" id="diw-HU-pHS"/>
+                            <constraint firstItem="EiN-Um-ckT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:3.5" id="duO-2s-pC9"/>
+                            <constraint firstItem="Toc-zK-1x2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="e3l-ex-GZf"/>
+                            <constraint firstAttribute="bottom" secondItem="Toc-zK-1x2" secondAttribute="bottom" id="fWF-XJ-Otm"/>
+                            <constraint firstItem="3Vt-yM-exC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="hhf-JZ-IHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Toc-zK-1x2" secondAttribute="trailing" constant="8" id="yHM-yV-d93"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addTransactionButton" destination="RIS-8q-Tbv" id="gph-AW-VFe"/>
+                        <outlet property="barChartView" destination="EiN-Um-ckT" id="qAU-kC-WKJ"/>
+                        <outlet property="totalLabel" destination="3Vt-yM-exC" id="tdN-Nq-keC"/>
+                        <outlet property="transactionsTableView" destination="Toc-zK-1x2" id="SUG-Jv-c4P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="62"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="61.330049261083744"/>
+        </scene>
+        <!--Manipulate Transaction Controller-->
+        <scene sceneID="cbw-Yy-hh6">
+            <objects>
+                <viewController storyboardIdentifier="ManipulateTransactionController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5cz-6Q-EbY" customClass="ManipulateTransactionController" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPd-9r-TPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-JY-TZZ">
+                                <rect key="frame" x="16" y="48" width="82" height="36"/>
+                                <color key="tintColor" red="0.10196078431372549" green="0.10588235294117647" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1TS-bB-SLV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CSv-JY-TZZ" firstAttribute="leading" secondItem="1TS-bB-SLV" secondAttribute="leading" constant="16" id="NqH-MW-Kqa"/>
+                            <constraint firstItem="CSv-JY-TZZ" firstAttribute="top" secondItem="1TS-bB-SLV" secondAttribute="top" constant="4" id="WbY-db-a6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="CSv-JY-TZZ" id="nsv-Vj-xWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjV-OL-neL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="61"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Add" width="44" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

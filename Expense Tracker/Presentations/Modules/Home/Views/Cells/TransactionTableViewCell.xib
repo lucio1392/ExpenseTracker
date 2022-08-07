@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="Expense_Tracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grocery" translatesAutoresizingMaskIntoConstraints="NO" id="h7N-Zd-Zfy">
+                        <rect key="frame" x="12" y="11.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Fxu-xe-G3r"/>
+                            <constraint firstAttribute="height" constant="30" id="MAE-qY-3F5"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zc9-MI-kOT">
+                        <rect key="frame" x="50" y="0.0" width="100" height="53"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groceries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vga-Z2-skk">
+                                <rect key="frame" x="0.0" y="11.5" width="100" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:08 06-08-2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaF-9L-rk8">
+                                <rect key="frame" x="0.0" y="32.5" width="100" height="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vga-Z2-skk" firstAttribute="leading" secondItem="Zc9-MI-kOT" secondAttribute="leading" id="Acs-gG-fMI"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="CaF-9L-rk8" secondAttribute="bottom" constant="6.5" id="Ld5-gP-iiH"/>
+                            <constraint firstAttribute="trailing" secondItem="vga-Z2-skk" secondAttribute="trailing" id="e49-mD-Mhb"/>
+                            <constraint firstItem="CaF-9L-rk8" firstAttribute="leading" secondItem="vga-Z2-skk" secondAttribute="leading" id="jEr-sC-hzH"/>
+                            <constraint firstItem="CaF-9L-rk8" firstAttribute="trailing" secondItem="vga-Z2-skk" secondAttribute="trailing" id="ovC-6h-hjJ"/>
+                            <constraint firstItem="CaF-9L-rk8" firstAttribute="top" secondItem="vga-Z2-skk" secondAttribute="bottom" constant="4" id="qzZ-aG-ukN"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$85.35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggw-Qj-Q9k">
+                        <rect key="frame" x="265" y="18" width="48" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h7N-Zd-Zfy" firstAttribute="centerY" secondItem="Zc9-MI-kOT" secondAttribute="centerY" id="37x-3a-J8K"/>
+                    <constraint firstItem="Zc9-MI-kOT" firstAttribute="leading" secondItem="h7N-Zd-Zfy" secondAttribute="trailing" constant="8" id="De6-yB-qtZ"/>
+                    <constraint firstItem="Ggw-Qj-Q9k" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zc9-MI-kOT" secondAttribute="trailing" constant="8" id="Gn9-Ja-BgP"/>
+                    <constraint firstItem="vga-Z2-skk" firstAttribute="top" secondItem="h7N-Zd-Zfy" secondAttribute="top" id="KqC-VR-bOM"/>
+                    <constraint firstAttribute="trailing" secondItem="Ggw-Qj-Q9k" secondAttribute="trailing" constant="12" id="ekh-0F-GPd"/>
+                    <constraint firstItem="h7N-Zd-Zfy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="kzv-cU-E1D"/>
+                    <constraint firstAttribute="bottom" secondItem="Zc9-MI-kOT" secondAttribute="bottom" id="nFO-3w-Urh"/>
+                    <constraint firstItem="Ggw-Qj-Q9k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rvG-Yy-q8e"/>
+                    <constraint firstItem="Zc9-MI-kOT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yil-7Z-ltW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="transactionAmountLabel" destination="Ggw-Qj-Q9k" id="o5f-PY-rs3"/>
+                <outlet property="transactionDateLabel" destination="CaF-9L-rk8" id="e6Z-Fi-hRd"/>
+                <outlet property="transactionTitleLabel" destination="vga-Z2-skk" id="46I-IG-zXc"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="93.415178571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="grocery" width="496" height="496"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,5 +8,10 @@
 import Foundation
 
 extension Date {
+    func toString(_ format: String = "dd/MM") -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        return formatter.string(from: self)
+    }
     
 }
