@@ -10,12 +10,12 @@ import RealmSwift
 
 class Transaction: Object {
     
-    @objc dynamic var transactionId: String = UUID().uuidString
-    @objc dynamic var title: String = ""
-    @objc dynamic var date: Date = Date()
-    @objc dynamic var amount: Double = 0
+    @Persisted var transactionId: String = UUID().uuidString
+    @Persisted var title: String = ""
+    @Persisted var date: Date = Date()
+    @Persisted var amount: Double = 0
     
-    convenience init(_ title: String, date: Date, amount: Double) {
+    convenience init(_ title: String, date: Date = Date(), amount: Double) {
         self.init()
         self.title = title
         self.date = date
@@ -26,5 +26,10 @@ class Transaction: Object {
         return "transactionId"
     }
     
-    
+}
+
+extension Transaction {
+    var day: String {
+        return date.toString()
+    }
 }
