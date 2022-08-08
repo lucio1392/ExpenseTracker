@@ -10,6 +10,7 @@ import Charts
 import RealmSwift
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class HomeViewController: UIViewController {
 
@@ -38,6 +39,7 @@ class HomeViewController: UIViewController {
         transactionsTableView.estimatedRowHeight = 64
         transactionsTableView.rowHeight = UITableView.automaticDimension
         transactionsTableView.separatorInset = .zero
+        transactionsTableView.setEditing(false, animated: true)
     }
     
     fileprivate func configTransactionButton() {
@@ -48,30 +50,43 @@ class HomeViewController: UIViewController {
         let outputs = viewModel.outputs
         let inputs = viewModel.inputs
         
+        let dataSource = RxTableViewSectionedReloadDataSource<TransactionSectionData>(configureCell: { datasource, tableview, indexPath, transaction in
+            let transactionCell = tableview.dequeueReusableCell(withIdentifier: TransactionTableViewCell.reuseID, for: indexPath) as? TransactionTableViewCell
+            
+            let viewModel = TransactionTableViewCellViewModel(transaction)
+            
+            transactionCell?.bind(viewModel)
+            
+            return transactionCell ?? UITableViewCell()
+        },
+            canEditRowAtIndexPath: {
+            _, _ in
+            return true
+        })
+ 
 //        Outputs
+        
         let transactions = outputs
-            .transactions
+            .transactionSections
             .asDriver(onErrorJustReturn: [])
+            .compactMap { $0.first }
         
-        transactions
-            .drive(transactionsTableView.rx.items(cellIdentifier: TransactionTableViewCell.reuseID, cellType: TransactionTableViewCell.self)) { index, transaction, cell in
-            let transactionCellViewModell = TransactionTableViewCellViewModel(transaction)
-            cell.bind(transactionCellViewModell)
-        }
+        outputs
+            .transactionSections
+            .bind(to: transactionsTableView.rx.items(dataSource: dataSource))
             .disposed(by: disposedBag)
-        
         
         transactions
             .flatMapLatest {
-                return Driver.just("\($0.compactMap { $0.amount }.reduce(0, +))".toCurrencyFormat())
+                return Driver.just("\($0.items.compactMap { $0.amount }.reduce(0, +))".toCurrencyFormat())
             }
             .drive(totalLabel.rx.text)
             .disposed(by: disposedBag)
             
         transactions
-            .drive(onNext: { [weak self] transactions in
+            .drive(onNext: { [weak self] transactionSection in
                 guard let self = self else { return }
-                self.updateBarChartView(transactions)
+                self.updateBarChartView(transactionSection.items)
         })
             .disposed(by: disposedBag)
         
@@ -86,18 +101,20 @@ class HomeViewController: UIViewController {
         
         transactionsTableView
             .rx
-            .modelSelected(Transaction.self)
-            .bind(to: inputs.onManipulateTransaction)
+            .modelDeleted(Transaction.self)
+            .bind(to: inputs.onDeleteTransaction)
             .disposed(by: disposedBag)
         
-        
+        transactionsTableView
+            .rx
+            .modelSelected(Transaction.self)
+            .bind(to: inputs.onManipulateTransaction)
+            .disposed(by: disposedBag)        
+  
     }
 
     fileprivate func updateBarChartView(_ transactions: [Transaction]) {
-        let chartDataEntries = transactions.enumerated().map { index, transaction in BarChartDataEntry(x: Double(index), y: transaction.amount) }
-        let axisValue = IndexAxisValueFormatter(values: transactions.map { $0.day })
-        self.barChartView.updateXAsixValue(axisValue)
-        self.barChartView.updateChartData(chartDataEntries)
+        self.barChartView.updateChartData(transactions)
     }
 }
 
