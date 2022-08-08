@@ -17,4 +17,8 @@ extension String{
       }
     return ""
   }
+    
+    func toDouble() -> Double {
+        return Double(self) ?? 0.0
+    }
 }

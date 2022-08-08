@@ -15,6 +15,14 @@ class Transaction: Object {
     @Persisted var date: Date = Date()
     @Persisted var amount: Double = 0
     
+    convenience init(_ id: String, title: String, date: Date = Date(), amount: Double) {
+        self.init()
+        self.transactionId = id
+        self.title = title
+        self.amount = amount
+        self.date = date
+    }
+    
     convenience init(_ title: String, date: Date = Date(), amount: Double) {
         self.init()
         self.title = title

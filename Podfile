@@ -8,6 +8,7 @@ target 'Expense Tracker' do
   pod 'Charts'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  pod 'RxDataSources', '~> 5.0'
   pod 'RealmSwift', '~>10'
   
   post_install do |installer|

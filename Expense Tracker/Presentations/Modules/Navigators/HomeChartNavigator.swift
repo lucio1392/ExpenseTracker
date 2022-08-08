@@ -7,8 +7,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 protocol HomeChartNavigatorType {
+    var onUpdateTransaction: PublishSubject<Void> { get }
+    
+    
     func toHomeChart()
     func toManipulateTransaction(_ transaction: Transaction?)
     func dismiss()
@@ -19,6 +23,8 @@ final class HomeChartNavigator: HomeChartNavigatorType {
     private let storyBoard: UIStoryboard
     private let navigationController: UINavigationController
     private let transactionUseCase: TransactionUseCase
+    
+    var onUpdateTransaction: PublishSubject<Void> = PublishSubject<Void>()
     
     init(_ storyBoard: UIStoryboard,
          navigationController: UINavigationController,
@@ -45,7 +51,8 @@ final class HomeChartNavigator: HomeChartNavigatorType {
     func toManipulateTransaction(_ transaction: Transaction?) {
         let manipulateTransactionController = storyBoard.instantiateViewController(ofType: ManipulateTransactionController.self)
 
-        let manipulateTransactionViewModel = ManipulateTransactionViewModel(self,
+        let manipulateTransactionViewModel = ManipulateTransactionViewModel(transactionUseCase,
+                                                                            navigator: self,
                                                                             transaction: transaction)
         
         manipulateTransactionController.viewModel = manipulateTransactionViewModel
