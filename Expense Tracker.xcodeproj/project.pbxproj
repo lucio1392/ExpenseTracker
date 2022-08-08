@@ -26,7 +26,6 @@
 		65BC9A27289FBD3200E1E59A /* InputNumberActionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65BC9A25289FBD3200E1E59A /* InputNumberActionCollectionCell.xib */; };
 		65BC9A29289FC01800E1E59A /* InputNumberActionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BC9A28289FC01800E1E59A /* InputNumberActionCellViewModel.swift */; };
 		65C34860289E9A3700AA5272 /* HomeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3485F289E9A3700AA5272 /* HomeChart.swift */; };
-		65C34864289EA20700AA5272 /* TransactionChartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C34863289EA20700AA5272 /* TransactionChartRepository.swift */; };
 		65CE5AC8289C1036006FA953 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CE5AC7289C1036006FA953 /* UIColor+ext.swift */; };
 		65D37285289AB565004BE0D7 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37284289AB565004BE0D7 /* TransactionRepository.swift */; };
 		65D37287289AB579004BE0D7 /* String+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D37286289AB579004BE0D7 /* String+ext.swift */; };
@@ -68,7 +67,6 @@
 		65BC9A25289FBD3200E1E59A /* InputNumberActionCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputNumberActionCollectionCell.xib; sourceTree = "<group>"; };
 		65BC9A28289FC01800E1E59A /* InputNumberActionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNumberActionCellViewModel.swift; sourceTree = "<group>"; };
 		65C3485F289E9A3700AA5272 /* HomeChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChart.swift; sourceTree = "<group>"; };
-		65C34863289EA20700AA5272 /* TransactionChartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionChartRepository.swift; sourceTree = "<group>"; };
 		65CE5AC7289C1036006FA953 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		65D37284289AB565004BE0D7 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		65D37286289AB579004BE0D7 /* String+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ext.swift"; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 			isa = PBXGroup;
 			children = (
 				65E79C2D289BA3C1009F5749 /* RealmDB */,
-				65C34863289EA20700AA5272 /* TransactionChartRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -492,7 +489,6 @@
 				65D37287289AB579004BE0D7 /* String+ext.swift in Sources */,
 				658FA707289BCC4F0065742C /* HomeViewController.swift in Sources */,
 				65BC9A29289FC01800E1E59A /* InputNumberActionCellViewModel.swift in Sources */,
-				65C34864289EA20700AA5272 /* TransactionChartRepository.swift in Sources */,
 				658FA709289BCC4F0065742C /* ManipulateTransactionViewModel.swift in Sources */,
 				658FA706289BCC4F0065742C /* HomeViewModel.swift in Sources */,
 				65D658F7289AB2C10010F75F /* Transaction.swift in Sources */,
